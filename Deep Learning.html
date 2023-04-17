@@ -1,0 +1,316 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <title>
+            Deep Learning
+        </title>
+        <style>
+            ::marker{
+                unicode-bidi: isolate;
+                font-variant-numeric: tabular-nums;
+                text-transform: none;
+                text-indent: 0px !important;
+                text-align: start !important;
+                text-align-last: start !important;
+            }
+            ::selection{
+                color: white;
+                background: var(--color-gfg);
+            }
+            * {
+                font-family: Helvetica,Arial,sans-serif
+            }
+            .row {
+                position: relative;
+                margin: auto;
+                max-width: 960px
+            }
+
+            .row:after {
+                clear: both;
+                content: '.';
+                display: block;
+                height: 0;
+                visibility: hidden
+            }
+
+            .row-extend {
+                background: #f5f4ef;
+                margin-top: 24px;
+                padding: 45px 0
+            }
+            @media (max-width: 900px) {
+                * {
+                font-family: Helvetica,Arial,sans-serif
+            }
+            .row {
+                position: relative;
+                margin: auto;
+                
+            }
+
+            .row:after {
+                clear: both;
+                content: '.';
+                display: block;
+                height: 0;
+                visibility: hidden
+            }
+
+            .row-extend {
+                background: #f5f4ef;
+                margin-top: 24px;
+                padding: 45px 0
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <center><h1>Deep Learning</h1></center>
+        
+        <div class="row">
+            <h3>What is Deep Learning?</h3>
+            <p>
+                Deep learning is a branch of Machine Learning which is completely based on Artificial Neural Networks(ANN), as neural network is going to mimic the human brain so deep learning is also a kind of mimic of human brain.
+                 In deep learning, we don’t need to explicitly program everything. The concept of deep learning is not new. It has been around for a couple of years now. It’s on hype nowadays because earlier we did not have that much processing power and a lot of data.
+                  As in the last 20 years, the processing power increases exponentially, deep learning and machine learning came in the picture. A formal definition of deep learning is- neurons
+            </p>
+            <br>
+            <p>
+                Deep Learning is a subset of Machine Learning that is based on artificial neural networks (ANNs) with multiple layers, also known as deep neural networks (DNNs).
+                 These neural networks are inspired by the structure and function of the human brain, and they are designed to learn from large amounts of data in an unsupervised or semi-supervised manner.
+            </p>
+            <p>
+                Deep Learning models are able to automatically learn features from the data, which makes them well-suited for tasks such as image recognition, speech recognition, and natural language processing.
+                 The most widely used architectures in deep learning are feedforward neural networks, convolutional neural networks (CNNs), and recurrent neural networks (RNNs).
+            </p>
+            <p>
+                Feedforward neural networks (FNNs) are the simplest type of ANN, with a linear flow of information through the network. FNNs have been widely used for tasks such as image classification, speech recognition, and natural language processing.
+            </p>
+            <p>
+                Recurrent Neural Networks (RNNs) are a type of neural networks that are able to process sequential data, such as time series and natural language. 
+                RNNs are able to maintain an internal state that captures information about the previous inputs, which makes them well-suited for tasks such as speech recognition, natural language processing, and language translation.
+            </p>
+            <p>
+                Deep Learning models are trained using large amounts of labeled data and require significant computational resources.
+                 With the increasing availability of large amounts of data and computational resources, deep learning has been able to achieve state-of-the-art performance in a wide range of applications such as image and speech recognition, natural language processing, and more.
+            </p>
+            <blockquote><p>
+                Deep learning is a particular kind of machine learning that achieves great power and flexibility by learning to represent the world as a nested hierarchy of concepts, with each concept defined in relation to simpler concepts, and more abstract representations computed in terms of less abstract ones.
+            </p></blockquote>
+            <p>
+                In human brain approximately 100 billion neurons all together this is a picture of an individual neuron and each neuron is connected through thousand of their neighbours. 
+                The question here is how do we recreate these neurons in a computer. So, we create an artificial structure called an artificial neural net where we have nodes or neurons. 
+                We have some neurons for input value and some for output value and in between, there may be lots of neurons interconnected in the hidden layer. 
+            </p>
+            <ol>
+                <li>
+                    <strong>Deep Neural Network</strong>
+                    – It is a neural network with a certain level of complexity (having multiple hidden layers in between input and output layers).
+                     They are capable of modeling and processing non-linear relationships.
+                </li>
+                <li>
+                    <strong>Deep Belief network(DBN)</strong>
+                    – It is a class of Deep Neural Network. It is multi-layer belief networks. 
+                    <strong><h4>Steps for Performing DBN: </h4></strong>
+                    <ul>
+                    <li> a. Learn a layer of features from visible units using Contrastive Divergence algorithm.</li>
+                    <li>b. Treat activations of previously trained features as visible units and then learn features of features.</li>
+                    <li>c. Finally, the whole DBN is trained when the learning for the final hidden layer is achieved.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Recurrent</strong>
+                    (perform same task for every element of a sequence)
+                    <strong>Neural Network</strong>
+                    – Allows for parallel and sequential computation. Similar to the human brain (large feedback network of connected neurons). They are able to remember important things about the input they received and hence enables them to be more precise.
+
+                </li>
+            </ol>
+            <br>
+            <p>
+                <center><img src="https://media.geeksforgeeks.org/wp-content/uploads/Screenshot-from-2018-05-31-14-19-37.png" alt></center>
+                <br><br>
+                <center><strong>Difference between Machine Learning and Deep Learning : </strong></center>
+            </p>
+            <br>
+            <figure class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Machine Learning</th>
+                            <th>Deep Learning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Works on small amount of Dataset for accuracy.</td>
+                            <td>Works on Large amount of Dataset.</td>
+                        </tr>
+                        <tr>
+                            <td>Dependent on Low-end Machine.</td>
+                            <td>Heavily dependent on High-end Machine.</td>
+                        </tr>
+                        <tr>
+                            <td>Divides the tasks into sub-tasks, solves them individually and finally combine the results.</td>
+                            <td>Solves problem end to end.</td>
+                        </tr>
+                        <tr>
+                            <td>Takes less time to train.</td>
+                            <td>Takes longer time to train.</td>
+                        </tr>
+                        <tr>
+                            <td>Testing time may increase.</td>
+                            <td>Less time to test the data.</td>
+                        </tr>
+                        <tr>
+                            <td>A model is created by relevant features which are manually extracted from images to detect an object in the image.</td>
+                            <td>Relevant features are automatically extracted from images. It is an end-to-end learning process.</td>
+                        </tr>
+                        <tr>
+                            <td>When more examples or training data is given, then it is consistent at a certain level of performance.</td>
+                            <td>As the size of data increases, it continues to improve.</td>
+                        </tr>
+                        <tr>
+                            <td>Machine learning is less complex as compare to deep learning.</td>
+                            <td>Deep learning is generally more complex.</td>
+                        </tr>
+                        <tr>
+                            <td>Without a high-performance GPU and lots of labelled data, machine learning techniques can be used based on applications.</td>
+                            <td>To get reliable results in less time one should have a high-performance GPU and lots of labelled data.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </figure>
+            <p>
+                <strong>Working:</strong>
+                <ol>
+                 <li>First, we need to identify the actual problem in order to get the right solution and it should be understood, the feasibility of the Deep Learning should also be checked (whether it should fit Deep Learning or not).</li>
+                 <li>Second, we need to identify the relevant data which should correspond to the actual problem and should be prepared accordingly. </li>
+                 <li>Third, Choose the Deep Learning Algorithm appropriately. </li>
+                 <li>Fourth, Algorithm should be used while training the dataset. </li>
+                 <li>Fifth, Final testing should be done on the dataset. </li>
+                </ol>
+                <br>
+                <center><img src="https://media.geeksforgeeks.org/wp-content/uploads/Screenshot-from-2018-05-31-14-16-35.png" alt></center>
+                <br>
+                <ul>
+                <li><strong>Tools Used : </strong>
+                Anaconda, Jupyter, Pycharm, etc. </li>
+                <li><strong>Languages Used:</strong>
+                R, Python, Matlab, CPP, Java, Julia, Lisp, Java Script, etc.</li>
+                <li><strong>Real Life Examples :</strong> </li>
+                </ul>
+            </p>
+            <pre>
+                How to recognize square from other shapes?
+                ...a) Check the four lines!
+                ...b) Is it a closed figure?
+                ...c) Does the sides are perpendicular from each other?
+                ...d) Does all sides are equal?
+                
+                So, Deep Learning is a complex task of identifying the shape and broken down into simpler 
+                tasks at a larger side.
+                
+                 Recognizing an Animal! (Is it a Cat or Dog?)
+                Defining facial features which are important for classification and system will then identify this automatically.
+                (Whereas Machine Learning will manually give out those features for classification)
+            </pre>
+            <p>
+                <strong>Limitations :</strong>
+            </p>
+            <ol>
+                <li>Learning through observations only.</li>
+                <li>The issue of biases.</li>
+            </ol>
+            <p>
+                <strong>Advantages :</strong>
+            </p>
+            <blockquote>
+                <ol>
+                    <li> Best in-class performance on problems.</li>
+                    <li>Reduces need for feature engineering.</li>
+                    <li>Eliminates unnecessary costs.</li>
+                    <li>Identifies defects easily that are difficult to detect.
+                    </li>
+                </ol>
+            </blockquote>
+            <p>
+                <strong>Disadvantages :</strong>
+
+            </p>
+            <blockquote>
+                <ol>
+                    <li>Large amount of data required.</li>
+                    <li>Computationally expensive to train.</li>
+                    <li>No strong theoretical foundation.</li>
+                </ol>
+            </blockquote>
+            <p>
+                <strong>Drawbacks of Deep Learning :</strong>
+            </p>
+            <ol>
+                <li>
+                    Large computing power is require to get accurate result.
+                </li>
+                <li>
+                    Difficulty in interpreting the resulting models.
+                </li>
+                <li>
+                    It requires large amounts of labelled data.
+                </li>
+                <li>
+                    <strong>Data dependency :</strong> learning models require a large amount of data to be trained effectively. Without enough data, the model may not be able to learn the underlying patterns and may perform poorly.
+                </li>
+                <li>
+                    <strong>Computationally intensive: </strong>Training a deep learning model can be computationally intensive, requiring high-performance hardware such as GPUs. This can be expensive and time-consuming, especially for large-scale applications.
+                </li>
+                <li>
+                    <strong>Overfitting</strong> : Deep learning models can be prone to overfitting, where the model learns the training data too well and fails to generalize to new data. This can be mitigated through techniques such as regularization and data augmentation.
+                </li>
+                <li>
+                    <strong>Lack of interpretability:</strong>  Deep learning models are often considered “black boxes” because they are difficult to interpret and understand how they make decisions. This can be a challenge for applications where interpretability is important, such as in healthcare or finance.
+                </li>
+                <li>
+                    <strong>Limited data efficiency:</strong>  Deep learning models require a large amount of data to be trained effectively, which can be a challenge in applications where data is scarce or expensive to obtain.
+                </li>
+                <li>
+                    <strong>Lack of transparency: </strong> Deep learning models can be difficult to debug and troubleshoot, particularly when dealing with large-scale architectures. This can make it challenging to diagnose and fix issues with the model’s performance.
+                </li>
+                <li>
+                    <strong>Vulnerability to adversarial attacks:</strong>  Deep learning models can be vulnerable to adversarial attacks, where an attacker deliberately manipulates the input data to mislead the model’s output. This can be a security risk in applications such as self-driving cars or facial recognition systems.
+                </li>
+            </ol>
+            <p>
+                 <strong>Applications :</strong>
+            </p>
+            <ol>
+                <li>
+                    <strong>Automatic Text Generation</strong> – Corpus of text is learned and from this model new text is generated, word-by-word or character-by-character. Then this model is capable of learning how to spell, punctuate, form sentences, or it may even capture the style.
+
+                </li>
+                <li>
+                    <strong>Healthcare</strong> – Helps in diagnosing various diseases and treating it.
+                </li>
+                <li>
+                    <strong>Image Recognition</strong> – Recognizes and identifies peoples and objects in images as well as to understand content and context. This area is already being used in Gaming, Retail, Tourism, etc.
+                </li>
+                <li>
+                    <strong>Predicting Earthquakes</strong> – Teaches a computer to perform viscoelastic computations which are used in predicting earthquakes.
+                </li>
+                <li>
+                    <strong>
+                        Automatic Machine Translation
+                    </strong>- Certain words, sentences or phrases in one language is transformed into another language (Deep Learning is achieving top results in the areas of text, images).
+                </li>
+            <p>
+                 Deep learning has a wide range of applications in various fields such as computer vision, speech recognition, natural language processing, and many more. 
+            </p>
+                
+            </ol>
+        </div>
+    </body>
+</html>
